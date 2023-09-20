@@ -1,0 +1,215 @@
+/* <!--
+	Name: Atul
+	File: style.css
+	Date: 19 September 2023
+	This is the first assignment (part 2 )in which i am going to change the html and css code
+-->*/
+/* || General setup */
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+
+
+
+html {
+  font-size: 10px;
+  background-color: #a9a9a9;
+}
+
+
+
+
+body {
+  width: 70%;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+/* || typography */
+
+h1, h2, h3 {
+  font-family: 'Cinzel Decorative', cursive;
+  color: #2a2a2a;
+}
+
+
+
+
+p, input, li {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: #2a2a2a;
+}
+
+
+
+
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  text-shadow: 2px 2px 10px black;
+}
+
+
+
+
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+
+
+
+h3 {
+  font-size: 2.2rem;
+}
+
+
+
+
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+
+
+
+/* || header layout */
+
+header img {
+  display: block;
+  padding-top: 20.15px;
+  height: 60px;
+  
+}
+
+
+
+
+header {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+
+body > * {
+  background-color: rgb(85, 212, 84);
+  padding: 1%;
+}
+
+
+
+
+h1 {
+  flex: 5;
+  text-transform: uppercase;
+}
+
+
+
+
+nav {
+  height: 50px;
+  flex: 100%;
+  display: flex;
+  
+}
+
+
+
+
+ul {
+  padding: 0;
+  flex: 2;
+  display: flex;
+  list-style-type: none;
+  
+  
+}
+
+
+
+li {
+  display: inline;
+  flex: 1;
+  text-align: center;
+  
+  
+}
+
+
+/* || main layout */
+
+main {
+  display: flex;
+}
+
+
+
+
+aside a {
+  display: block;
+  float: left;
+  width: 50%;
+}
+
+
+
+
+article, section {
+  flex: 4;
+}
+
+
+
+nav a, nav span {
+  display: inline-block;
+  line-height: 1.7;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 2rem;
+  height: 3rem;
+  color: black;
+}
+
+
+
+
+aside {
+  flex: 1;
+  margin-left: 10px;
+  padding: 1%;
+}
+
+
+
+
+aside img {
+  max-width: 100%;
+}
+
+
+
+
+footer {
+  margin-top: 10px;
+}
+
+
+
+
+main, header, nav, article, aside, footer, section {
+  background-color: rgba(0,255,0,0.5);
+  padding: 1%;
+}
+
+
+
