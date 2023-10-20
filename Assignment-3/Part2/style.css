@@ -21,8 +21,8 @@ body {
   font: bold;
   background-image: linear-gradient(
   to top left,
-  rgba(0, 0, 0, 0.2),
-  rgba(0, 0, 0, 0.2) 30%,
+  rgba(0, 0, 0, 0.4),
+  rgba(0, 0, 0, 0.4) 30%,
   rgba(0, 0, 0, 0)
 );
   border-radius: 10px;
