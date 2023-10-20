@@ -8,10 +8,6 @@ body {
   margin: 0 auto;
   min-width: 1000px;
   max-width: 1400px;
-  font-family: 'YourBodyFont', sans-serif; /* Use your downloaded body font here */
-  font-size: 16px; /* Site-wide font size */
-  line-height: 1.5; /* Adjust line height for body text */
-
 }
 
 /* Layout */
@@ -50,21 +46,21 @@ header, footer {
 /* Fonts */
 
 @font-face {
-  font-family: 'YourFont1'; /* Define the first downloaded font */
-  src: url('font1.woff2') format('woff2'); /* Use the appropriate font file and format */
+  font-family: 'Font1'; /* Define the first downloaded font */
+  src: url('font/Font1.otf') format('TrueType'); /* Use the appropriate font file and format */
 }
 
 @font-face {
-  font-family: 'YourFont2'; /* Define the second downloaded font */
-  src: url('font2.woff2') format('woff2'); /* Use the appropriate font file and format */
+  font-family: 'Font'; /* Define the second downloaded font */
+  src: url('font/Font.otf') format('TrueType'); /* Use the appropriate font file and format */
 }
 
-html {
-  font-family: 'YourFont1', sans-serif; /* Apply the first downloaded font to the HTML element */
+html{
+  font-family: 'Font1'; /* Apply the first downloaded font to the HTML element */
 }
 
-h1, h2 {
-  font-family: 'YourFont2', sans-serif; /* Apply the second downloaded font to h1 and h2 elements */
+h1, h2{
+  font-family: 'Font'; /* Apply the second downloaded font to h1 and h2 elements */
 }
 
 /* Text styling */
