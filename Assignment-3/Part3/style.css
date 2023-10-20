@@ -65,67 +65,90 @@ h1, h2{
 
 /* Text styling */
 
-p, li {
-  font-size: 1em; /* Modify font size using em or rem units */
-}
-
 h1 {
-  letter-spacing: 1px; /* Letter spacing for headings */
+  font-size: 5rem;
+  text-align: center;
 }
 
-p + h1, p + h2 {
-  text-indent: 2em; /* Indent the first paragraph after each heading */
+h2 {
+  font-size: 3rem;
 }
 
-/* Links */
-
-a, a:link, a:visited {
-  color: #a66; /* Color for unvisited and visited links */
-  text-decoration: underline; /* Add underline to links */
+section h2 + p {
+  text-indent: 20px;
 }
 
-a:hover, a:focus {
-  text-decoration: none; /* Remove underline on hover or focus */
+p, li {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  letter-spacing: 1.5px;
+  word-spacing: 4%;
 }
+
 
 a {
-  outline: none; /* Remove default focus outline from all links */
-
-  /* Add external link icon (customize the content or icon URL) */
-  &.external-link::after {
-    content: ' (external link)';
-    padding-left: 5px;
-  }
+  outline: none;
 }
 
-/* Lists */
+a[href*="http"] {
+  padding-right: 20px;
+  background: url(external-link-52.png) no-repeat 100% 0;
+  background-size: 16px 16px;
+}
+
+a:link, a:visited {
+  color: #a66;
+}
+
+
+
+a:active {
+  color: transparent;
+  text-shadow: 0px 0px 1px #f00,
+               0px 0px 2px #f00,
+               0px 0px 3px black,
+               0px 0px 4px black;
+}
+
 
 ul, ol {
-  list-style-type: square; /* Modify list style */
-  margin: 1em 0; /* Margin with em or rem units */
+  margin: 1.6rem 0;
 }
 
-/* Navigation bar */
-
-nav {
-  padding: 10px;
-  margin: 0;
-  list-style-type: none; /* Remove list bullets */
+ul {
+  list-style-type: square;
 }
 
-nav a {
-  display: block;
-  padding: 5px;
-  color: #a66;
-  margin: 5px 0;
+ol {
+  list-style-type: lower-latin;
 }
 
-nav a:hover, nav a:focus, nav a:active {
-  color: #ff6600; /* Customize focus and hover states for nav links */
+
+nav ul {
+  padding-left: 0;
+  margin-top: 1rem;
 }
 
-/* Add external link icon to external links in the navigation bar */
-nav a.external-link::after {
-  content: ' (external link)';
-  padding-left: 5px;
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 3.5rem;
+  border: 1px solid #a66;
+}
+
+nav li a:focus, nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
 }
