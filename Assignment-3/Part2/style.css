@@ -11,12 +11,13 @@ body {
 }
 
 .cool_box{
-  width: 350px;
-  height: 200px;
+  width: 500px;
+  height: 400x;
   background-color: red;
   text-align: center;
   color: white;
-  line-height: 200px;
+  line-height: 350px;
+  font-size: 40px;
   background-image: linear-gradient(
   to top left,
   rgba(0, 0, 0, 0.2),
