@@ -40,6 +40,7 @@ class bouncingBall {
       ctx.arc(this.x, this.y, this.size, 0, 2 * Math.PI);
       ctx.fill();
    }
+
    update() {
     if ((this.x + this.size) >= width) {
        this.velX = -(Math.abs(this.velX));
@@ -60,4 +61,19 @@ class bouncingBall {
     this.x += this.velX;
     this.y += this.velY;
  }
+
+ collisionDetect() {
+  for (const otherBall of balls) {
+     if (!(this === otherBall)) {
+        const dx = this.x - otherBall.x;
+        const dy = this.y - otherBall.y;
+        const distance = Math.sqrt(dx * dx + dy * dy);
+
+        if (distance < this.size + otherBall.size) {
+          otherBall.color = this.color = randomRGB();
+        }
+     }
+  }
+}
+
   }
